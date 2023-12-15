@@ -19,10 +19,10 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: real
-          environment_name: real-env
+          application_name: app1
+          environment_name: App1-env
           version_label: ${{ github.sha }}
-          existing_bucket_name: elasticbeanstalk-us-west-2-681973429347
-          region: us-west-2
+          existing_bucket_name: elasticbeanstalk-us-west-1-681973429347
+          region: us-west-1
           deployment_package: deploy.zip
           use_existing_version_if_available: true
